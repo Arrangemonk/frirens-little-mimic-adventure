@@ -1,0 +1,21 @@
+# ninja log v5
+0	33	7376360441087408	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	58cb258884ec8550
+0	33	7376360441087408	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	58cb258884ec8550
+34	3820	7376360478954845	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	7161fb5e81b263a4
+34	3820	7376360478954845	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	7161fb5e81b263a4
+3821	3853	7376360479278167	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	e3f3e34fe940c430
+3821	3853	7376360479278167	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	e3f3e34fe940c430
+3853	3884	7376360479578489	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	a95a03e35e6c87b
+3853	3884	7376360479578489	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	a95a03e35e6c87b
+3884	3915	7376360479904070	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	62497ba0be1ad619
+3884	3915	7376360479904070	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	62497ba0be1ad619
+3916	3945	7376360480208717	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	e3cade65304fa320
+3916	3945	7376360480208717	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	e3cade65304fa320
+3946	3974	7376360480501643	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	5b3f6163ec8315b5
+3946	3974	7376360480501643	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	5b3f6163ec8315b5
+3975	4006	7376360480818365	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	a18473f8fb7fa60d
+3975	4006	7376360480818365	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	a18473f8fb7fa60d
+4006	4046	7376360481219005	CMakeFiles/raylib-populate-complete	48277b547ddf7d5d
+4006	4046	7376360481219005	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	48277b547ddf7d5d
+4006	4046	7376360481219005	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	48277b547ddf7d5d
+4006	4046	7376360481219005	C:/Users/kfran/source/repos/Arrangemonk/frirens-little-mimic-adventure/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	48277b547ddf7d5d

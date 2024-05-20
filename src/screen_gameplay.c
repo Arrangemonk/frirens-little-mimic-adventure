@@ -32,6 +32,13 @@
 static int framesCounter = 0;
 static int finishScreen = 0;
 
+extern float volume[8];
+extern Music music[8];
+extern Model dungeon;
+extern Model chest;
+extern Material material;
+extern Camera camera;
+
 //----------------------------------------------------------------------------------
 // Gameplay Screen Functions Definition
 //----------------------------------------------------------------------------------
@@ -42,6 +49,12 @@ void InitGameplayScreen(void)
     // TODO: Initialize GAMEPLAY screen variables here!
     framesCounter = 0;
     finishScreen = 0;
+    for(int i = 0; i< 8; i++)
+    {
+        volume[i] = 0.0f;
+    }
+    volume[5] = 1.0f;
+    volume[0] = 1.0f;
 }
 
 // Gameplay Screen Update logic
@@ -53,7 +66,6 @@ void UpdateGameplayScreen(void)
     if (IsKeyPressed(KEY_ENTER) || IsGestureDetected(GESTURE_TAP))
     {
         finishScreen = 1;
-        PlaySound(fxCoin);
     }
 }
 
@@ -61,7 +73,6 @@ void UpdateGameplayScreen(void)
 void DrawGameplayScreen(void)
 {
     // TODO: Draw GAMEPLAY screen here!
-    DrawRectangle(0, 0, GetScreenWidth(), GetScreenHeight(), PURPLE);
     Vector2 pos = { 20, 10 };
     DrawTextEx(font, "GAMEPLAY SCREEN", pos, font.baseSize*3.0f, 4, MAROON);
     DrawText("PRESS ENTER or TAP to JUMP to ENDING SCREEN", 130, 220, 20, MAROON);
