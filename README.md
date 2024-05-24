@@ -50,26 +50,22 @@ cmake --build build
 
 - Inside the build folder are another folder (named the same as the project name on CMakeLists.txt) with the executable and resources folder.
 
-## $(Game Title)
+## Frirens little Mimic Adventure
 
 ![$(Game Title)](screenshots/screenshot000.png "$(Game Title)")
 
 ### Description
 
-$(Your Game Description)
-
-### Features
-
- - $(Game Feature 01)
- - $(Game Feature 02)
- - $(Game Feature 03)
+a Friren themed shells game
 
 ### Controls
 
 Keyboard:
- - $(Game Control 01)
- - $(Game Control 02)
- - $(Game Control 03)
+ - up
+ - down
+ - left
+ - right
+ - return
 
 ### Screenshots
 
@@ -77,9 +73,8 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 
 ### Developers
 
- - $(Developer 01) - $(Role/Tasks Developed)
- - $(Developer 02) - $(Role/Tasks Developed)
- - $(Developer 03) - $(Role/Tasks Developed)
+ - $(Arrangemonk) - $(Code / 3d)
+ - $(Kurohina) - $(2D)
 
 ### Links
 
