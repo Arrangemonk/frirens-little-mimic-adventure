@@ -37,6 +37,7 @@ Music music[8];
 Model dungeon;
 Model chest;
 Material material = { 0 };
+Material cmaterial = { 0 };
 Camera camera = { 0 };
 
 //----------------------------------------------------------------------------------
@@ -111,13 +112,20 @@ int main(void)
     camera.projection = CAMERA_PERSPECTIVE;             // Camera projection type
 
     dungeon = LoadModel("resources/dungeon.gltf");
+    chest = LoadModel("resources/chest.obj");
 
     // Load lightmap shader
     Shader shader = LoadShader(TextFormat("resources/glsl%i/lightmap.vs", GLSL_VERSION),
                                TextFormat("resources/glsl%i/lightmap.fs", GLSL_VERSION));
 
+    Shader cshader = LoadShader(TextFormat("resources/glsl%i/chest.vs", GLSL_VERSION),
+                               TextFormat("resources/glsl%i/chest.fs", GLSL_VERSION));
+
     Texture texture = LoadTexture("resources/dungeon_dif.png");
     Texture light = LoadTexture("resources/dungeon_lit.png");
+
+    Texture ctexture = LoadTexture("resources/chest_dif.png");
+    Texture clight = LoadTexture("resources/chest_lit.png");
 
     GenTextureMipmaps(&texture);
     SetTextureFilter(texture, TEXTURE_FILTER_TRILINEAR);
@@ -125,10 +133,22 @@ int main(void)
     GenTextureMipmaps(&light);
     SetTextureFilter(light, TEXTURE_FILTER_TRILINEAR);
 
+    GenTextureMipmaps(&ctexture);
+    SetTextureFilter(ctexture, TEXTURE_FILTER_TRILINEAR);
+
+    GenTextureMipmaps(&clight);
+    SetTextureFilter(clight, TEXTURE_FILTER_TRILINEAR);
+
     material = LoadMaterialDefault();
     material.shader = shader;
     material.maps[MATERIAL_MAP_ALBEDO].texture = texture;
     material.maps[MATERIAL_MAP_METALNESS].texture = light;
+
+    cmaterial = LoadMaterialDefault();
+    cmaterial.shader = cshader;
+    cmaterial.maps[MATERIAL_MAP_ALBEDO].texture = ctexture;
+    cmaterial.maps[MATERIAL_MAP_METALNESS].texture = clight;
+    chest.materials[0] = cmaterial;
 
     // Setup and init first screen
     currentScreen = LOGO;
@@ -170,6 +190,10 @@ int main(void)
     UnloadTexture(texture);
     UnloadTexture(light);
 
+    UnloadModel(chest);       // Unload the mesh
+    UnloadShader(cshader);   // Unload shader
+    UnloadTexture(ctexture);
+    UnloadTexture(clight);
 
     CloseAudioDevice();     // Close audio context
 
@@ -352,6 +376,8 @@ static void UpdateDrawFrame(void)
 
         BeginMode3D(camera);
         DrawMesh(dungeon.meshes[0],material,MatrixIdentity());
+        //DrawMesh(chest.meshes[0],cmaterial,MatrixIdentity());
+        DrawModel(chest, Vector3Zero(),1.0f,WHITE);
         EndMode3D();
 
         switch(currentScreen)

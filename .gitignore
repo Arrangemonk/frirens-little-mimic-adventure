@@ -69,3 +69,6 @@ compile_commands.json
 # Android
 *apk*
 android.*
+/cmake-build-debug-mingw
+/cmake-build-debug
+/cmake-build-debug

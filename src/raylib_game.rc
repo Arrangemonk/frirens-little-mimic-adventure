@@ -9,13 +9,13 @@ BEGIN
 	//BLOCK "080904E4" 	// English UK
     BLOCK "040904E4"	// English US
     BEGIN
-	  VALUE "CompanyName", "raylib technologies"
-      VALUE "FileDescription", "raylib-game | A great game template to enjoy coding"
+	  VALUE "CompanyName", "Alice Project"
+      VALUE "FileDescription", "Frirens little Mimic Adventure"
       VALUE "FileVersion", "1.0"
-      VALUE "InternalName", "raylib-game"
+      VALUE "InternalName", "Friren Game"
       VALUE "LegalCopyright", "(c) 2022 raylib technologies (@raylibtech)"
-      //VALUE "OriginalFilename", "raylib_app.exe"
-      VALUE "ProductName", "raylib-game"
+      //VALUE "OriginalFilename", "Friren_Adventure.exe"
+      VALUE "ProductName", "Friren-Adventure"
       VALUE "ProductVersion", "1.0"
     END
   END
