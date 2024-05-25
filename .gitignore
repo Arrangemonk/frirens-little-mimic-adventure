@@ -72,3 +72,7 @@ android.*
 /cmake-build-debug-mingw
 /cmake-build-debug
 /cmake-build-debug
+cmake-build-debug/_deps/raylib-src/src/rtextures.c
+/cmake-build-debug
+/cmake-build-debug/_deps/raylib-src/src
+cmake-build-debug/_deps/raylib-src/src/rtextures.c

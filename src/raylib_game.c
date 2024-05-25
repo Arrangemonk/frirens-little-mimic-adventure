@@ -105,7 +105,7 @@ int main(void)
     volume[1] = 1.0f;
 
     // Define the camera to look into our 3d world
-    camera.position = (Vector3){ 0.0f, 2.0f, -5.5f };    // Camera position
+    camera.position = (Vector3){ 0.0f, 2.0f, -2.0f };    // Camera position
     camera.target = (Vector3){ 0.0f, 2.0f, -10.0f };      // Camera looking at point
     camera.up = (Vector3){ 0.0f, 1.0f, 0.0f };          // Camera up vector (rotation towards target)
     camera.fovy = 45.0f;                                // Camera field-of-view Y
@@ -367,7 +367,7 @@ static void UpdateDrawFrame(void)
     }
     else UpdateTransition();    // Update transition (fade-in, fade-out)
     //----------------------------------------------------------------------------------
-    UpdateCamera(&camera, CAMERA_ORBITAL);
+    //UpdateCamera(&camera, CAMERA_ORBITAL);
     // Draw
     //----------------------------------------------------------------------------------
     BeginDrawing();
@@ -377,7 +377,7 @@ static void UpdateDrawFrame(void)
         BeginMode3D(camera);
         DrawMesh(dungeon.meshes[0],material,MatrixIdentity());
         //DrawMesh(chest.meshes[0],cmaterial,MatrixIdentity());
-        DrawModel(chest, Vector3Zero(),1.0f,WHITE);
+        DrawModel(chest,(Vector3) {0.0f,0.0f,-10.0f},1.0f,WHITE);
         EndMode3D();
 
         switch(currentScreen)

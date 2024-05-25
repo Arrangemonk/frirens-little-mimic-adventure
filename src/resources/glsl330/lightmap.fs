@@ -9,7 +9,7 @@ out vec4 finalColor;
 
 void main()
 {
-    vec4 texelColor = texture(texture0, fragTexCoord);
-    vec4 texelColor2 = texture(texture1, fragTexCoord2);
-    finalColor = 2.0f * texelColor * texelColor2;
+vec4 texelColor = texture(texture0, fragTexCoord);
+vec4 texelColor2 = texture(texture1, fragTexCoord2);
+finalColor = 2.0 * texelColor * texelColor2;
 }
